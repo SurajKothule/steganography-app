@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCrypt Steganography</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1><span class="pixel">Pixel</span><span class="crypt">Crypt</span></h1>
+            <p class="tagline">Hide your secrets in plain sight</p>
+        </header>
+        
+        <main>
+            <div class="upload-box" id="dropZone">
+                <div class="upload-content">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <input type="file" id="fileInput" accept=".png,.jpg,.jpeg">
+                    <p id="fileLabel">Drag & drop image or click to browse</p>
+                    <p class="file-requirements">Supports: JPG, PNG (Max 5MB)</p>
+                </div>
+                <div class="preview" id="imagePreview"></div>
+            </div>
+            
+            <div class="form-group">
+                <div class="input-field">
+                    <label for="message"><i class="fas fa-key"></i> Secret Message</label>
+                    <textarea id="message" placeholder="Type your secret message here..."></textarea>
+                </div>
+                
+                <div class="input-field">
+                    <label for="password"><i class="fas fa-lock"></i> Password (optional)</label>
+                    <input type="password" id="password" placeholder="Enter password for extra security">
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button id="encodeBtn">
+                    <i class="fas fa-lock"></i> Encode
+                </button>
+                <button id="decodeBtn">
+                    <i class="fas fa-unlock"></i> Decode
+                </button>
+            </div>
+            
+            <div id="result"></div>
+        </main>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html
