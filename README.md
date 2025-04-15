@@ -1,4 +1,4 @@
-# 🖼️ Steganography App (Windows)
+# 🖼️ Steganography App 
 
 Hide secret messages in images using Python/Flask.
 
